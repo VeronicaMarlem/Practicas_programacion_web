@@ -1,0 +1,71 @@
+<HTML5>
+	<HEAD>
+		<meta charset="utf-8">
+	</HEAD>
+	<BODY bgcolor="">
+		<form action="../Practica2/index.html" id="frmpractica1" method="post">
+			<div align="center">
+				<FONT face="tahoma" size="5" color="blue">Mi página 1</FONT>
+				<br>
+				<FONT face="tahoma" size="3" color="black">Autor:<u><i><b>Veronica Marlem</b></i></u></FONT>
+				<br>
+				<FONT face="tahoma" size="2" color="black">Fecha: 30 Enero 2018</FONT>
+				<br>
+				<br>
+				<table width="50%" border="1">
+				<tr>
+					<td align="left"><img src="imagenes/imagen1.jpg" width="80%" height="40%" ></td>
+					<td>	</td>
+					<td align="right"><img src="imagenes/imagen2.jpg" width="50%" height="30%" ></td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<b><font face="Arial" size="4" color="rgba(150,120,100,.1)">BIENVENIDOS</font></b>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="http://www.google.com" target="_blank">
+							<font face="Arial" size="2">¡Accede a google!</font> 
+						</a>
+						<br><br>
+						<a href="index.html" target="_new">
+							<font face="Arial" size="2">¡Accede a mi página!</font> 
+						</a>
+						<br><br>
+						<a href="../Practica2/index.html" target="_self">
+							<font face="Arial" size="2">¡Accede a práctica de tablas!</font> 
+						</a>
+					</td>
+					<td align="center">
+						<a href="http://www.facebook.com" target="_blank">
+							<img src="imagenes/imagen3.jpg" width="5%" height="5%">
+						</a>
+						<a href="http://www.twitter.com" target="_parent">
+							<img src="imagenes/imagen4.jpg" width="5%" height="5%">
+						</a>
+						<a href="http://www.instagram.com" target="_top">
+							<img src="imagenes/imagen5.jpg" width="5%" height="5%">
+						</a> 
+					</td>
+					<td>
+						<!--CONTROLES HTML PARA ENTRADA DE DATOS Y FUNCIONES DEL CLICK-->
+						<input type="text" value="Captura aquí...">
+						<br><br>
+						<input type="button" value="enviar a servidor..." onclick="validar()">
+						<input type="submit" value="enviar a servidor...">
+					</td>
+				</tr>
+			</table>
+			</div>
+		</form>	
+	</BODY>
+</HTML>
+<!--INICIO DEL SCRIPT (GUION)DE CÓDIGO JAVASCRIPT PARA DAR FUNCIONALIDAD-->
+<script language="javascript">
+	function validar(){
+		//document.forms["frmpractica1"].submit();
+		//document.forms[0].submit();
+		document.forms.frmpractica1.submit();
+	}
+</script>
